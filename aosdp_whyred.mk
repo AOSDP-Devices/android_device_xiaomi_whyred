@@ -23,10 +23,10 @@ $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/whyred.mk)
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit some common Mokee stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
+# Inherit some common Aosdp stuff.
+$(call inherit-product, vendor/aosdp/config/common_full_phone.mk)
 
-PRODUCT_NAME := mk_whyred
+PRODUCT_NAME := aosdp_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
