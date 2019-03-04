@@ -216,6 +216,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.s5k3l8_ofilm.low.lux=379 \
     persist.s5k3l8_ofilm.light.lux=367
 
+# Enable HAL3
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.HAL3.enabled=1
+
+# HAL1 apps list
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android
+
 #
 # PROPERTIES FOR IMS
 #
@@ -303,7 +311,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #Bringup properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.atfwd.start=true
+    persist.vendor.radio.atfwd.start=true
 
 #set maximum supported adapter voltage
 PRODUCT_PROPERTY_OVERRIDES += \
